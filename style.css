@@ -11,8 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
-
 header {
     background-color: #1e3a8a;
     text-align: center;
@@ -24,12 +22,11 @@ header h1 {
     font-size: 42px;
 }
 
-/* NAVIGATION */
-
 nav {
     background-color: #0f172a;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -56,14 +53,31 @@ nav ul li a:hover {
     background-color: #2563eb;
 }
 
-/* MAIN */
+header form {
+    margin-top: 15px;
+}
+
+header label {
+    margin-right: 8px;
+}
+
+header input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+header button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 main {
     width: 85%;
     margin: auto;
 }
-
-/* SECTION */
 
 section {
     background-color: white;
@@ -80,8 +94,6 @@ section h2 {
     display: inline-block;
     padding-bottom: 5px;
 }
-
-/* ABOUT */
 
 #about {
     text-align: center;
@@ -102,8 +114,6 @@ section h2 {
     margin: 12px auto;
 }
 
-/* SKILLS */
-
 dl {
     margin-top: 20px;
 }
@@ -120,11 +130,100 @@ dd {
     margin-top: 6px;
 }
 
-/* PROJECTS */
+#interests ul {
+    margin-left: 25px;
+}
 
 article {
     background-color: #eef4ff;
     padding: 20px;
     margin-top: 25px;
     border-left: 6px solid #2563eb;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article h3 {
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+article a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+#contact form {
+    max-width: 600px;
+}
+
+#contact label {
+    font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #2563eb;
+}
+
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    #about img {
+        width: 180px;
+        height: 180px;
+    }
 }
