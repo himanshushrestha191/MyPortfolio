@@ -17,7 +17,7 @@ header{
     background: #1e3a8a;
     text-align: center;
     color: white;
-    padding: 35px;
+    padding: 16px;
 }
 
 header h1{
@@ -55,27 +55,74 @@ nav ul li a:hover{
     background-color: #2563eb;
 }
 
+/*MAIN*/
+
 main{
     width: 85%;
-    margin: auto;
-
+    margin:auto;
 }
 
+/*SECTION*/
 
 section{
     background: white;
     margin: 40px 0;
     padding: 35px;
-    border-radius: 50px;
-    box-shadow:0 5px 15px black ;
-
-
+    border-radius: 12px;
+    box-shadow: 0 1px  20px rgba(0,0,0,0.1);
 }
+
 section h2{
     color: #1e3a8a;
-    margin-bottom:20px;
-    border-bottom:3px solid #2563eb ;
-    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #2563eb;
+    display: inline-block;;
     padding-bottom: 5px;
+}
 
+/*ABOUT*/
+
+#about{
+    text-align: center;
+}
+
+#about img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 5px solid #2563eb;
+    margin: 20px 0;
+}
+
+#about p{
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/*SKILLS*/
+
+dl{
+    margin-top:20px;
+}
+
+dt{
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-top: 18px;
+    font-size: 20px;
+}
+
+dd{
+    margin-left:25px;
+    margin-top: 6px;
+}
+
+/*PROJECTS*/
+
+article{
+    background: #eef4ff;
+    padding: 20px;
+    margin-top: 25px;
+    border-left: 6px solid #2563eb;
 }
