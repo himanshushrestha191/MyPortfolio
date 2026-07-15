@@ -95,23 +95,35 @@ section h2 {
     padding-bottom: 5px;
 }
 
+/* ABOUT SECTION */
+
 #about {
     text-align: center;
 }
 
 #about img {
+    display: block;
     width: 220px;
     height: 220px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid #2563eb;
-    margin: 20px 0;
+    margin: 0 auto 20px;
+}
+
+#about h2 {
+    display: table;
+    margin: 0 auto 30px;
+    color: #1e3a8a;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 5px;
 }
 
 #about p {
     font-size: 18px;
     max-width: 800px;
     margin: 12px auto;
+    text-align: center;
 }
 
 dl {
@@ -225,5 +237,9 @@ footer {
     #about img {
         width: 180px;
         height: 180px;
+    }
+
+    #about h2 {
+        margin-bottom: 22px;
     }
 }
