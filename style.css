@@ -29,13 +29,27 @@ a:hover {
     color: #1d4ed8;
 }
 
+img {
+    display: block;
+}
+
 
 /* =========================================
    Skip Link
 ========================================= */
 
 .skip-link {
-    display: none;
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    background: #fbbf24;
+    color: #0f172a;
+    padding: 10px 15px;
+    z-index: 2000;
+}
+
+.skip-link:focus {
+    top: 10px;
 }
 
 
@@ -54,6 +68,8 @@ a:hover {
 }
 
 .header-container {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +78,7 @@ a:hover {
 
 
 /* =========================================
-   Logo
+   Logo and Brand
 ========================================= */
 
 .brand {
@@ -81,8 +97,10 @@ a:hover {
 .logo {
     width: 60px;
     height: 60px;
+    object-fit: contain;
+    background: white;
+    padding: 5px;
     border-radius: 50%;
-    object-fit: cover;
 }
 
 
@@ -92,6 +110,7 @@ a:hover {
 
 .nav-list {
     display: flex;
+    align-items: center;
     gap: 25px;
     list-style: none;
 }
@@ -158,6 +177,7 @@ a:hover {
     width: 320px;
     height: 320px;
     object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     border: 8px solid white;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
@@ -171,8 +191,11 @@ a:hover {
 .button {
     display: inline-block;
     padding: 12px 22px;
+    border: none;
     border-radius: 8px;
+    font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -259,8 +282,8 @@ a:hover {
 .card {
     background: white;
     padding: 25px;
-    border-radius: 12px;
     border-left: 6px solid #2563eb;
+    border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
 }
@@ -317,8 +340,8 @@ a:hover {
 
 .project-card {
     background: white;
-    border-radius: 12px;
     padding: 30px;
+    border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
@@ -392,6 +415,10 @@ a:hover {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.form-group textarea {
+    resize: vertical;
+}
+
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
@@ -413,7 +440,7 @@ a:hover {
 
 
 /* =========================================
-   Tablet
+   Tablet View
 ========================================= */
 
 @media screen and (max-width: 992px) {
@@ -447,7 +474,7 @@ a:hover {
 
 
 /* =========================================
-   Mobile
+   Mobile View
 ========================================= */
 
 @media screen and (max-width: 768px) {
@@ -504,7 +531,7 @@ a:hover {
 
 
 /* =========================================
-   Small Mobile
+   Small Mobile View
 ========================================= */
 
 @media screen and (max-width: 480px) {
@@ -536,5 +563,10 @@ a:hover {
 
     .button {
         font-size: 16px;
+    }
+
+    .skills-grid,
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 }
