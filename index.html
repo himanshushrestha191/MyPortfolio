@@ -4,200 +4,375 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Personal portfolio of Himanshu Shrestha, a BIT student interested in web development, artificial intelligence, business information systems, and database management."
+    >
+
     <title>Himanshu Shrestha | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <img
-            src="logo.png"
-            alt="Himanshu Shrestha logo"
-            width="50"
-        >
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
-        <h1>Himanshu Shrestha</h1>
+    <header class="site-header" id="home">
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Technical Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
 
-        <form action="#" method="get" role="search">
-            <label for="search">Search</label>
-
-            <input
-                type="search"
-                id="search"
-                name="search"
-                placeholder="Search"
+            <a
+                class="brand"
+                href="#home"
+                aria-label="Himanshu Shrestha portfolio homepage"
             >
+                <img
+                    src="images/logo.png"
+                    alt="Himanshu Shrestha logo"
+                    class="logo"
+                >
 
-            <button type="submit">Search</button>
-        </form>
+                <span>Himanshu Shrestha</span>
+            </a>
+
+            <nav aria-label="Main navigation">
+
+                <ul class="nav-list">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Technical Skills</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
     </header>
 
-    <main id="home">
-        <br>
-        <br>
+    <main id="main-content">
 
-        <section id="about">
-            <h2>About Me</h2>
+        <section class="hero" aria-labelledby="hero-title">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    BIT Student · Kathmandu, Nepal
+                </p>
+
+                <h1 id="hero-title">
+                    Building practical digital solutions with technology.
+                </h1>
+
+                <p class="hero-text">
+                    I am Himanshu Shrestha, an aspiring technology
+                    professional interested in web development,
+                    artificial intelligence, business information systems,
+                    and database management.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a
+                        class="button button-primary"
+                        href="#projects"
+                    >
+                        View My Projects
+                    </a>
+
+                    <a
+                        class="button button-secondary"
+                        href="#contact"
+                    >
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
 
             <img
-                src="profile.jpeg"
+                src="images/profile.jpeg"
                 alt="Portrait of Himanshu Shrestha"
-                width="200"
+                class="profile-image"
             >
-            <br>
-            <br>
 
-            <p>
-                Hello! My name is <strong>Himanshu Shrestha</strong>.
-                I am currently pursuing a Bachelor of Information
-                Technology (BIT) at MIT Nepal. I am based in
-                Kathmandu, Nepal.
-            </p>
-
-            <p>
-                I am interested in web development, artificial
-                intelligence, business information systems, and
-                database management. I enjoy learning new technologies
-                and creating practical solutions for real-world problems.
-            </p>
         </section>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
+        <section
+            id="about"
+            class="content-section"
+            aria-labelledby="about-title"
+        >
 
-            <dl>
-                <dt><strong>HTML</strong></dt>
-                <dd>
-                    Creating structured, semantic, and accessible webpages.
-                </dd>
+            <div class="section-heading">
 
-                <dt><strong>CSS</strong></dt>
-                <dd>
-                    Designing webpage layouts and improving presentation.
-                </dd>
+                <p class="eyebrow">
+                    Introduction
+                </p>
 
-                <dt><strong>JavaScript</strong></dt>
-                <dd>
-                    Adding interactivity and functionality to webpages.
-                </dd>
+                <h2 id="about-title">
+                    About Me
+                </h2>
 
-                <dt><strong>C</strong></dt>
-                <dd>
-                    Writing structured programs and solving programming
+            </div>
+
+            <div class="about-grid">
+
+                <p>
+                    Hello! My name is
+                    <strong>Himanshu Shrestha</strong>.
+                    I am currently pursuing a Bachelor of Information
+                    Technology at MIT Nepal. I am based in Kathmandu,
+                    Nepal.
+                </p>
+
+                <p>
+                    I am interested in web development, artificial
+                    intelligence, business information systems, and
+                    database management. I enjoy learning new technologies
+                    and creating practical solutions for real-world
                     problems.
-                </dd>
+                </p>
 
-                <dt><strong>SQL</strong></dt>
-                <dd>
-                    Creating databases and writing SQL queries.
-                </dd>
+            </div>
 
-                <dt><strong>Git and GitHub</strong></dt>
-                <dd>
-                    Managing source code and collaborating on projects.
-                </dd>
-
-                <dt><strong>Visual Studio Code</strong></dt>
-                <dd>
-                    Writing, editing, and managing code for programming
-                    projects.
-                </dd>
-
-                <dt><strong>Microsoft Excel</strong></dt>
-                <dd>
-                    Organizing data, using formulas, creating tables,
-                    and performing basic analysis.
-                </dd>
-            </dl>
         </section>
 
-        <section id="interests">
-            <h2>Interests</h2>
+        <section
+            id="skills"
+            class="content-section"
+            aria-labelledby="skills-title"
+        >
 
-            <ul>
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Capabilities
+                </p>
+
+                <h2 id="skills-title">
+                    Technical Skills
+                </h2>
+
+            </div>
+
+            <dl class="card-grid skills-grid">
+
+                <div class="card">
+                    <dt>HTML</dt>
+                    <dd>
+                        Creating structured, semantic, and accessible
+                        webpages.
+                    </dd>
+                </div>
+
+                <div class="card">
+                    <dt>CSS</dt>
+                    <dd>
+                        Designing webpage layouts and improving
+                        presentation.
+                    </dd>
+                </div>
+
+                <div class="card">
+                    <dt>JavaScript</dt>
+                    <dd>
+                        Adding interactivity and functionality to
+                        webpages.
+                    </dd>
+                </div>
+
+                <div class="card">
+                    <dt>C Programming</dt>
+                    <dd>
+                        Writing structured programs and solving
+                        programming problems.
+                    </dd>
+                </div>
+
+                <div class="card">
+                    <dt>SQL</dt>
+                    <dd>
+                        Creating databases and writing SQL queries.
+                    </dd>
+                </div>
+
+                <div class="card">
+                    <dt>Git and GitHub</dt>
+                    <dd>
+                        Managing source code and collaborating on
+                        projects.
+                    </dd>
+                </div>
+
+                <div class="card">
+                    <dt>Visual Studio Code</dt>
+                    <dd>
+                        Writing, editing, and managing programming
+                        projects.
+                    </dd>
+                </div>
+
+                <div class="card">
+                    <dt>Microsoft Excel</dt>
+                    <dd>
+                        Organizing data, using formulas, creating tables,
+                        and performing basic analysis.
+                    </dd>
+                </div>
+
+            </dl>
+
+        </section>
+
+        <section
+            id="interests"
+            class="content-section"
+            aria-labelledby="interests-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Focus Areas
+                </p>
+
+                <h2 id="interests-title">
+                    Interests
+                </h2>
+
+            </div>
+
+            <ul class="tag-list">
                 <li>Web Development</li>
                 <li>Artificial Intelligence</li>
                 <li>Business Information Systems</li>
                 <li>Database Management</li>
             </ul>
+
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
+        <section
+            id="projects"
+            class="content-section"
+            aria-labelledby="projects-title"
+        >
 
-            <article>
-                <h3>Personal Portfolio Website</h3>
+            <div class="section-heading">
 
-                <p>
-                    This single-page portfolio was developed using
-                    semantic HTML5. It presents information about my
-                    background, technical skills, interests, projects,
-                    and contact details.
+                <p class="eyebrow">
+                    Selected Work
                 </p>
 
-                <p>
-                    Repository:
-                    <a
-                        href="https://github.com/himanshushrestha191/MyPortfolio"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View Personal Portfolio Repository
-                    </a>
-                </p>
+                <h2 id="projects-title">
+                    Projects
+                </h2>
 
-                <p>
-                    Live website:
-                    <a
-                        href="https://himanshushrestha191.github.io/MyPortfolio/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View My Portfolio Website
-                    </a>
-                </p>
-            </article>
+            </div>
 
-            <article>
-                <h3>Database Management Project</h3>
+            <div class="card-grid project-grid">
 
-                <p>
-                    This project demonstrates database design, table
-                    creation, data organization, relationships, and
-                    SQL queries.
-                </p>
+                <article class="project-card">
 
-                <p>
-                    Repository:
-                    <a
-                        href="https://github.com/himanshushrestha191"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View Database Project Repository
-                    </a>
-                </p>
-            </article>
+                    <h3>
+                        Personal Portfolio Website
+                    </h3>
+
+                    <p>
+                        This responsive single-page portfolio was
+                        developed using semantic HTML5 and external CSS.
+                        It presents information about my background,
+                        technical skills, interests, projects, and
+                        contact details.
+                    </p>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/himanshushrestha191/MyPortfolio"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Repository
+                        </a>
+
+                        <a
+                            href="https://himanshushrestha191.github.io/MyPortfolio/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live Website
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <h3>
+                        Database Management Project
+                    </h3>
+
+                    <p>
+                        This project demonstrates database design,
+                        table creation, data organization, relationships,
+                        and SQL queries.
+                    </p>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/himanshushrestha191"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub Profile
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <section
+            id="contact"
+            class="content-section"
+            aria-labelledby="contact-title"
+        >
 
-            <form action="#" method="post">
+            <div class="section-heading">
 
-                <p>
-                    <label for="name">Name</label><br>
+                <p class="eyebrow">
+                    Get in Touch
+                </p>
+
+                <h2 id="contact-title">
+                    Contact Me
+                </h2>
+
+            </div>
+
+            <form
+                class="contact-form"
+                action="#"
+                method="post"
+            >
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
 
                     <input
                         type="text"
@@ -206,10 +381,14 @@
                         autocomplete="name"
                         required
                     >
-                </p>
 
-                <p>
-                    <label for="email">Email</label><br>
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
 
                     <input
                         type="email"
@@ -218,33 +397,44 @@
                         autocomplete="email"
                         required
                     >
-                </p>
 
-                <p>
-                    <label for="message">Message</label><br>
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
 
                     <textarea
                         id="message"
                         name="message"
                         rows="6"
-                        cols="40"
                         required
                     ></textarea>
-                </p>
 
-                <p>
-                    <button type="submit">Submit</button>
-                </p>
+                </div>
+
+                <button
+                    class="button button-primary"
+                    type="submit"
+                >
+                    Submit
+                </button>
 
             </form>
+
         </section>
 
     </main>
 
-    <footer>
+    <footer class="site-footer">
+
         <p>
-            &copy; 2026 Himanshu Shrestha. All Rights Reserved.
+            &copy; 2026 Himanshu Shrestha.
+            All rights reserved.
         </p>
+
     </footer>
 
 </body>
