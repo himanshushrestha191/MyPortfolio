@@ -29,10 +29,6 @@ a:hover {
     color: #1d4ed8;
 }
 
-img {
-    display: block;
-}
-
 
 /* =========================================
    Skip Link
@@ -58,8 +54,6 @@ img {
 }
 
 .header-container {
-    max-width: 1200px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,7 +62,7 @@ img {
 
 
 /* =========================================
-   Logo and Brand
+   Logo
 ========================================= */
 
 .brand {
@@ -88,9 +82,7 @@ img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    object-fit: contain;
-    background: white;
-    padding: 5px;
+    object-fit: cover;
 }
 
 
@@ -166,7 +158,6 @@ img {
     width: 320px;
     height: 320px;
     object-fit: cover;
-    object-position: center;
     border-radius: 50%;
     border: 8px solid white;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
@@ -181,10 +172,7 @@ img {
     display: inline-block;
     padding: 12px 22px;
     border-radius: 8px;
-    border: none;
     font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -265,10 +253,7 @@ img {
 }
 
 .skills-grid {
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(250px, 1fr)
-    );
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .card {
@@ -327,10 +312,7 @@ img {
 ========================================= */
 
 .project-grid {
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(320px, 1fr)
-    );
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .project-card {
@@ -410,10 +392,6 @@ img {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.form-group textarea {
-    resize: vertical;
-}
-
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
@@ -435,11 +413,10 @@ img {
 
 
 /* =========================================
-   Tablet View
+   Tablet
 ========================================= */
 
 @media screen and (max-width: 992px) {
-
     .header-container {
         flex-direction: column;
         gap: 20px;
@@ -470,11 +447,10 @@ img {
 
 
 /* =========================================
-   Mobile View
+   Mobile
 ========================================= */
 
 @media screen and (max-width: 768px) {
-
     .site-header {
         padding: 20px;
     }
@@ -528,11 +504,10 @@ img {
 
 
 /* =========================================
-   Small Mobile View
+   Small Mobile
 ========================================= */
 
 @media screen and (max-width: 480px) {
-
     .logo {
         width: 50px;
         height: 50px;
@@ -561,10 +536,5 @@ img {
 
     .button {
         font-size: 16px;
-    }
-
-    .skills-grid,
-    .project-grid {
-        grid-template-columns: 1fr;
     }
 }
