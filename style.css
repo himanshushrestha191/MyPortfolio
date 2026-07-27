@@ -685,15 +685,43 @@ img {
     margin-top: 60px;
 }
 
-
 /* =========================================
    Tablet View
 ========================================= */
 
 @media screen and (max-width: 992px) {
+    .site-header {
+        position: relative;
+        padding: 16px 20px;
+    }
+
     .header-container {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+    }
+
+    .brand {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+    }
+
+    .nav-list a {
+        display: block;
+        padding: 7px 10px;
+        font-size: 14px;
     }
 
     .hero {
@@ -726,18 +754,37 @@ img {
 
 @media screen and (max-width: 768px) {
     .site-header {
-        padding: 20px;
+        position: relative;
+        padding: 14px 16px;
     }
 
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
+    .header-container {
         gap: 12px;
     }
 
     .brand {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         text-align: center;
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6px 8px;
+    }
+
+    .nav-list a {
+        padding: 6px 8px;
+        font-size: 13px;
     }
 
     .hero {
@@ -775,42 +822,46 @@ img {
         padding: 25px;
     }
 }
-/* TABLET AND MOBILE NAVIGATION */
 
-@media screen and (max-width: 992px) {
+
+/* =========================================
+   Small Mobile View
+========================================= */
+
+@media screen and (max-width: 480px) {
     .site-header {
-        position: relative;
-        padding: 15px 20px;
-    }
-
-    .header-container {
-        flex-direction: column;
-        gap: 15px;
+        padding: 12px;
     }
 
     .brand {
-        flex-direction: row;
-        text-align: left;
+        font-size: 16px;
     }
 
     .logo {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     .nav-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 8px 14px;
+        gap: 5px;
     }
 
     .nav-list a {
-        display: block;
-        padding: 7px 10px;
-        font-size: 14px;
+        padding: 5px 6px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .profile-image {
+        width: 190px;
+        height: 190px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
     }
 }
 
